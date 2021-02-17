@@ -32,8 +32,7 @@ function game() {
     this.removeEventListener("click", game)
     arr.splice(arr.indexOf(parseInt(this.id)), 1)
     this.classList.add(player)
-    win(player)
-    computerturn()
+    setTimeout(win,100,player);
 }
 function computerturn() {
     if (!gameover){
@@ -48,7 +47,7 @@ function computerturn() {
         arr.splice(arr.indexOf(guess), 1)
         divs[guess].classList.add(comp)
         divs[guess].removeEventListener("click", game)
-        win(comp)
+        setTimeout(win,100,comp);
     }
     else {
         alert("Tie Game Over")
@@ -75,6 +74,11 @@ function win(winner) {
         gameover = true
         newgame()
     }
+    else {
+    if(arr.length%2==0){
+        computerturn()
+    }
+}
 }
 function newgame(){
     let loose = document.createElement("button")
