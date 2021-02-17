@@ -80,7 +80,6 @@ function newgame(){
     let loose = document.createElement("button")
     loose.setAttribute("class", "button");
     loose.innerHTML = "Play Again"
-    console.log(loose);
     document.getElementById("container").appendChild(loose)
     loose.addEventListener("click", start)
 }
