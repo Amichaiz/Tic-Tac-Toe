@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac</title>
+  <style>
+body{
+  background-color: cadetblue;
+}
+.container{
+  text-align: center;
+  
+}
+p{
+  margin: 0;
+  font-size: 10vh;
+  font-family: cursive;
+}
+h4{
+  font-family: cursive;
+}
+.box{
+  height: 20vh;
+  width: 20vh;
+  text-align: center;
+  font-size: 15vh;
+  cursor: pointer;
+}
+.box:hover {
+    background-color: cyan;
+  }
+.flex{
+  display:flex;
+  justify-content: center;
+}
+.u{
+  border-top: 3px solid blue;
+}
+.r{
+  border-right: 3px solid blue;
+}
+.l{
+  border-left: 3px solid blue;
+}
+.d{
+  border-bottom: 3px solid blue;
+}
+.ziv{
+background-image: url("https://ca.slack-edge.com/T7P4CAKAS-UP17FT59U-g660cee370b1-512");
+height: 20vh;
+  width: 20vh;
+background-size: cover;
+cursor: pointer;
+}
+.igor{
+  background-image: url("https://ca.slack-edge.com/T7P4CAKAS-U01J9MJH1JN-4e0c6db4711a-512");
+  height: 20vh;
+  width: 20vh;  
+background-size: cover;
+cursor: pointer;
+}
+.button {
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	align-self: center;
+	margin: 2px 0px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	position: absolute;
+  top: 44%;
+  left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  background-color: white; 
+	color: black; 
+	border: 2px solid #008CBA;
+  }
+  .button:hover {
+	background-color: #008CBA;
+	color: white;
+  }
+  </style>
+</head>
+<body>
+  <div id="container" class="container">
+    <p>Tic Tac Toe</p>
+  <div class="flex">
+    <div id="0"class="d r box box1"></div>
+    <div id="1"class="d r l box box2"></div>
+    <div id="2"class="d l box box3"></div>
+  </div>
+  <div class="flex">
+    <div id="3"class="d u r box box4"></div>
+    <div id="4"class="d u r l box box5"></div>
+    <div id="5"class="d u l box box6"></div>
+  </div>
+  <div class="flex">
+    <div id="6"class="u r box box7"></div>
+    <div id="7"class="u r l box box8"></div>
+    <div id="8"class="u l box box9"></div>
+  </div>
+  <h4>Choose your player</h4>
+  <div class="flex">
+    <div id="ziv" class="ziv"></div>
+    <div id="igor" class="igor"></div>
+  </div>
+</div>
+<script type="text/Javascript" src="tictac.js"></script>
+</body>
+</html>
